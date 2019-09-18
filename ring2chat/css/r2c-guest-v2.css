@@ -1,0 +1,476 @@
+@font-face {
+    font-family: 'linecons';
+    src: url("../fonticons/linecons/linecons.eot@wvi0ht.html") format("embedded-opentype"),
+        url("../fonticons/linecons/linecons.ttf@wvi0ht.html") format("truetype"),
+        url("../fonticons/linecons/linecons.woff@wvi0ht.html") format("woff"),
+        url("../fonticons/linecons/linecons.svg@wvi0ht") format("svg");
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+/* ChatBoxAll */
+#chatbox { 
+     width: 100%;
+     height: 410px;
+     padding-bottom: 1.5em;
+}
+
+#conversejs .chatbox .chat-body{
+	border-radius: 5px !important;
+}
+
+/* hide conversejs avatar on chatbox and replace with custom style */
+#conversejs #controlbox .controlbox-head {
+    display: none;
+}
+
+/* /* ChatBoxConverse */
+#converse-embedded-chat, #conversejs {
+    /*bottom: -442px;*/
+    position: relative;
+    right: 0px;
+    height: auto;
+}
+
+/* ============ chatbox ============ */
+.com_block_title {
+    margin-bottom: 10px;
+    line-height: 1.42em;
+}
+
+#conversejs .chatbox {
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+#conversejs #controlbox .controlbox-pane {
+    border-radius: 15px;
+    height: 100%;
+    top: 0px;
+    overflow-y: hidden;
+}
+
+#conversejs #controlbox .controlbox-pane label {
+    font-size: 15px;
+    font-weight: bold;
+    height: auto;
+    margin: 4px;
+    float: left;
+}
+
+/* Input color  Chat */
+#conversejs .pure-form input[type="text"]:focus,
+#conversejs .pure-form select:focus,
+#conversejs .pure-form textarea:focus {
+    outline: 0;
+    border-color: #CDCDCD;
+}
+
+/* ButtonLetChat */
+#conversejs .button-primary {
+    color: white;
+    background-color: #F6A20B;
+    width: 38%;
+    height: 87%;
+}
+
+/*#conversejs .chatbox .box-flyout {
+    width: 100%;
+    bottom: 0;
+    height:100%;
+    box-shadow: 0.1px 0.2px 1px 0.2px rgba(0, 0, 0, 0.09);
+    margin-left: 0px
+}*/
+
+ /* chatbox dimension */
+#converse-embedded-chat .chatbox .box-flyout, #conversejs .chatbox .box-flyout {
+    height: 376.6px;
+    min-height: 225px;
+    min-width: 200px;
+    width: 100%;
+    top: 0px;
+    /*bottom: 65px;*/
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/*=============== In Chat ===============*/
+ 
+/* chat box title */
+#conversejs .chatbox .chat-title {
+    color: #3e3e3e;
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 15px;
+}
+    
+.sd-status-icon.icon-away,.sd-status-icon.icon-offline,
+.chat-toolbar.no-text-select,#conversejs .chat-head .avatar,
+#conversejs .chatbox form.sendXMPPMessage .chat-toolbar,
+#conversejs .chatbox-btn,#conversejs.chat-head .avatar,
+.sd-status-icon.icon-online,#conversejs .chat-head .user-custom-message,
+#conversejs .icon-logout::before {
+    display: none;
+}
+
+/* Date */
+#conversejs .chatbox .chat-body .chat-info.chat-date {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #098f19;
+}
+
+#conversejs .pure-button-hover, #conversejs .pure-button:focus, #conversejs .pure-button:hover {
+    background-image: none;
+}
+
+#converse-embedded-chat .chatbox form.sendXMPPMessage .send-button, #conversejs .chatbox form.sendXMPPMessage .send-button:before {
+    content: "\e01e";
+    color: #FA7E13;
+}
+
+textarea,
+button {
+    display: inline-block;
+}
+
+#converse-embedded-chat .chatbox form.sendXMPPMessage .send-button, #conversejs .chatbox form.sendXMPPMessage .send-button {
+    position: absolute;
+    left: auto;
+    width: 10%;
+    background-color: transparent;
+    color: transparent;
+    font-size: 1.5em;
+    height: 47px;
+    top: 24px;
+    font-family: 'linecons';
+}
+
+/*========== chat-head ==========*/
+#conversejs .chat-head.chat-head-chatbox {
+    display: none;
+}
+
+/*========== chat-box ==========*/
+#conversejs .chatbox .chat-content-sendbutton {
+	border-radius: 5px !important;
+    height: 290px;
+    overflow-x: hidden;
+}
+
+/*========== Distance between chats ==========*/
+/*#conversejs .chatbox .chat-body .chat-message span.chat-msg-content {
+    margin-top: 5px;
+}*/
+
+#conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+    color: #000;
+    height: 63px ;
+    resize: none ;
+    width: 80% ;
+    padding: 19px 12px ;
+    margin: 12px -5px 10px 5px ;
+    display: inline-block ;
+    border: 1px solid #ccc;
+    border-radius: 8px ;
+    box-sizing: border-box ;
+    background-color: white ;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#conversejs .chatbox form.sendXMPPMessage {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-clip: padding-box;
+}
+
+#conversejs .icon-online::before,
+#conversejs .icon-offline::before,
+.add-converse-contact {
+    display: none;
+}
+
+#converse-embedded-chat .icon-logout::before, #conversejs .icon-logout::before {
+    content: "\e002";
+}
+
+/* chat message them */
+.sd-chat-author{
+    display: none;
+}
+.div-chat-msg-me .chat-msg-time{
+    text-align: right;
+}
+.div-chat-msg-me .chat-msg-content {
+    background-color: rgba(11, 147, 246, 1);
+    padding: 10px 20px !important;
+    margin-bottom: 10px !important;
+    position: relative;
+    float: right;
+    max-width: 80% !important;
+    color: #fff;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)!important;
+    clear: both;
+}
+
+.div-chat-msg-me .chat-msg-content::before {
+    content: "";
+    height:20px;
+    position: absolute;
+    bottom:-2px;
+    right:-6px;
+    border-right: 20px solid #0B93F6;
+        border-bottom-left-radius: 16px 14px;
+    transform:             translate(0, -2px);
+        -moz-transform:    translate(0, -2px);
+        -ms-transform:     translate(0, -2px);
+        -o-transform:      translate(0, -2px);
+        -webkit-transform: translate(0, -2px);
+    box-shadow: 3px 0px 0px 0 rgba( 178, 178, 178, 0.4 );  
+}
+
+.div-chat-msg-me .chat-msg-content::after {
+    content: "";
+    position: absolute;
+    bottom:-2px;
+    right:-56px;
+    width:26px;
+    height:20px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+     transform:             translate(-30px, -2px);
+        -moz-transform:    translate(-30px, -2px);
+        -ms-transform:     translate(-30px, -2px);
+        -o-transform:      translate(-30px, -2px);
+        -webkit-transform: translate(-30px, -2px);
+}
+
+/* chat message me*/
+.div-chat-msg-them .chat-msg-content {
+    color: #000;
+    background: #E5E5EA;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.12), 1px 1px 2px rgba(0,0,0,0.24);
+    padding:10px 20px !important;
+    margin-bottom: 5px !important;
+    position: relative;
+    float: left;
+    max-width: 80% !important;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    clear: both;
+}
+
+.div-chat-msg-them .chat-msg-content::before {
+    content:"";
+    position:absolute;
+    z-index:2;
+    bottom:-2px;
+    left:-7px;
+    height:20px;
+    border-left:20px solid #E5E5EA;
+    border-bottom-right-radius: 16px 14px;
+    -webkit-transform:translate(0, -2px);
+}
+
+.div-chat-msg-them .chat-msg-content::after {
+    content:"";
+    position:absolute;
+    z-index:3;
+    bottom:-2px;
+    left:4px;
+    width:26px;
+    height:20px;
+    background:white;
+    border-bottom-right-radius: 10px;
+    transform:             translate(-30px, -2px);
+        -moz-transform:    translate(-30px, -2px);
+        -ms-transform:     translate(-30px, -2px);
+        -o-transform:      translate(-30px, -2px);
+        -webkit-transform: translate(-30px, -2px);
+}
+
+#conversejs .chatbox .chat-body .chat-message span.chat-msg-them {
+    color: #098f19;
+    float: left;
+}
+
+.chatbox .chat-body .chat-message span.chat-msg-me {
+    color: #578ea9;
+    float: right !important;
+}
+
+.chat-msg-author.chat-msg-me{
+    float: right ;
+}
+
+/* time passed */
+.sd-time {
+    color: #999;
+    font-size: 70%;
+    padding-left: 10px;
+    float: right;
+}
+
+#conversejs .chatbox .chat-body .chat-message span.chat-msg-author {
+    white-space: normal;
+}
+
+#conversejs .chatbox .chat-body .chat-message {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.chat-msg-author {
+    font-weight: bold ;
+}
+
+.chat-msg-content {
+    font-size: 15px ;
+    line-height: 1.5 ;
+}
+
+/*===============   In CHATBOX Lonin ===============*/
+
+/*========= textinput =========*/
+.ccformfield2 {
+    background: #FFF;
+    width: 100%;
+    margin: auto !important;
+}
+
+#conversejs .ccbtn2 {
+   	color: white;
+	background-color: #B5B4B2;
+	width: 40%;
+	height: 40px;
+	border-radius: 25px;
+	margin: 2px !important;
+	line-height: 33px;
+}
+
+#conversejs .ccbtn2:hover{
+	cursor: pointer;
+    opacity: 0.8;
+}
+
+.chatwithus{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin: 30px auto !important;
+    padding: 3% !important;
+}
+
+.chatwithus label {
+    font-size: 15px;
+    font-weight: bold;
+    height: auto;
+    margin: 4px;
+    float: left;
+}
+
+.chatwithus br {
+    margin-bottom: 5px;
+}
+
+/*=============== Set screen ===============*/
+
+@media screen and (max-height: 450px) {
+    #converse-embedded-chat,
+    #conversejs {
+        width: 100%;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    #converse-embedded-chat,
+    #conversejs {
+        width: 100%;
+        left: 0px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    #conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+       width: 84%;
+    }
+}
+
+@media only screen and (min-width: 416px) {
+    #conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+       width: 84%;
+    }
+}
+
+@media only screen and (min-width: 488px) {
+    #conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+       width: 87%;
+    }
+}
+
+@media only screen and (min-width: 561px) {
+
+    #conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+       width: 83%;
+    }
+}
+
+
+@media only screen and (min-width: 612px) {
+    #conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+       width: 85%;
+    }
+}
+
+@media only screen and (min-width: 755px) {
+
+    #conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+       width: 88%;
+    }
+}
+
+@media only screen and (min-width: 855px) {
+    #conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+       width: 90%;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    #conversejs .chatbox .box-flyout {
+        /*bottom: 65.5px !important;*/
+    }
+    #conversejs .chatbox form.sendXMPPMessage .chat-textarea {
+       width: 91%;
+    }
+}
+
+/*=============== Error Msg ===============*/
+
+.color-text-error{
+    text-align: center;
+    color: #b10000;
+    margin: 120px 15px 15px !important;
+    font-size: 15px !important;
+}
+
+#conversejs #controlbox .controlbox-pane {
+    padding: 0px;
+}
+
+.title-chat {
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 15px;
+}

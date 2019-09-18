@@ -1,0 +1,47 @@
+/***** body shapes *****/
+#sd-main-wrap {
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/***** tab shape *****/
+.sd-tab > .sd-tab-item > a {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.sd-tab > li > a {
+    border-radius: 10px;
+}
+
+.sd-tab > .sd-tab-item-active > a {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/****************** Page *******************************/
+
+.sd-content-border{
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 44px 10px;
+}
+
+.sd-footer-border{
+    border-width: 2px;
+    border-style: solid;
+}
+
+img.has-border-radius {
+    border-radius: 50%;
+}
+
+/*************************************************/
+
+/* copy rights bar */
+.sd-footer-content {
+    border-radius: 10px;
+}
+
+/*************************************************/

@@ -1,0 +1,349 @@
+#sd-header {
+    background-size: cover !important;
+    width: 100%;
+    padding-top: 31%;
+    height: auto;
+    position: relative;
+}
+
+/* gradient */
+
+#sd-header-gradient {
+    top: 70%;
+    width: 100%;
+    padding-top: 35.5%;
+    height: auto;
+    position: absolute;
+}
+
+#sd-header-gradient:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 5%;
+}
+
+#sd-header-gradient:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 25%;
+}
+
+/* Strip Bar
+   ========================================================================== */
+
+#sd-strip-bar-main-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#sd-strip-bar {
+    width: 100%;
+    position: relative;
+    left: 0;
+    height: 100%;
+    top: 0;
+}
+
+#sd-strip-bar-wrap-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#sd-strip-bar-wrap {
+    margin-top: 0.7em;
+    width: 100%;
+    text-align: right;
+}
+
+/* logo */
+
+#sd-site-logo {
+    width: 17%;
+    background-color: #fff;
+    position: absolute;
+    top: -0.45em;
+    left: 1.2em;
+    z-index: 1;
+}
+
+#sd-site-logo,
+#sd-site-logo img {
+    transition: width 0.3s ease;
+} 
+
+.sd-site-logo-none {
+    background-color: rgba(255,255,255,0) !important;
+    display: none;
+}
+
+.sd-site-logo-png {
+    background-color: transparent !important;
+    padding: 0px !important;
+}
+
+/* site title */
+
+#sd-site-title {
+    width: 100%;
+    margin-top: 0;
+    padding: 0.13em 0.6em;
+    line-height: 1.2em;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#sd-site-title.text-overflow,
+#sd-site-title.text-overflow div {
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+/* contact */
+
+.sd-site-contact {
+    font-size: 1.2em;
+    display: none;
+}
+
+.sd-site-contact-show {
+    display: none;
+}
+
+/* Strip Bar Sticky
+   ========================================================================== */
+
+#sd-strip-bar.sticky {
+    height: 30px !important;
+    position: fixed;
+    top: 0 !important;
+    transition: all 400ms ease 0s, opacity 300ms ease 0s;
+    z-index: 4;
+    border-radius: 0 !important;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+    min-height: auto !important;
+}
+
+#sd-strip-bar.sticky2 {
+    height: 0 !important;
+}
+
+#sd-strip-bar.sticky #sd-strip-bar-wrap {
+    margin-top: 0 !important;
+    height: 0px !important;
+}
+
+#sd-strip-bar.sticky #sd-strip-bar-wrap-container {
+    border-radius: 0px !important;
+}
+
+#sd-strip-bar.sticky #sd-site-logo {
+    width: auto;
+    top: 0 !important;
+    overflow: hidden;
+}
+
+#sd-strip-bar.sticky #sd-site-logo img {
+    height: 100%;
+    width: auto;
+}
+
+#sd-strip-bar.sticky #sd-site-title {
+    color: rgba(255, 255, 255, 1);
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0.3em;
+    text-align: center !important;
+    font-size: 1em;
+    position: absolute;
+    width: auto;
+}
+
+#sd-strip-bar.sticky #sd-site-title div {
+    text-align: center !important;
+}
+
+/* Strip Bar Full Height
+   ========================================================================== */
+
+#sd-strip-bar.full-height #sd-strip-bar-wrap {
+    margin-top: 0;
+    height: 100%;
+}
+
+#sd-strip-bar.full-height #sd-site-title {
+    position: absolute;
+    top: 8px;
+}
+
+#sd-strip-bar.full-height.sticky #sd-site-title {
+    top: 0;
+}
+
+@media only screen and (min-width: 380px) {
+    #sd-strip-bar-wrap {
+        margin-top: 0.8em;
+    }
+    
+    #sd-site-logo {
+        top: -0.5em;
+        left: 1.1em;
+    }
+
+    #sd-site-title {
+        padding: 0.3em 0.65em;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    #sd-site-title {
+        padding: 0.45em 0.65em;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .sd-site-contact.sd-site-contact-show {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #sd-strip-bar-wrap {
+        margin-top: 1.2em;
+    }
+
+    #sd-site-title {
+        font-size: 1.5em;
+        padding: 0.45em 0.8em;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    #sd-strip-bar.sticky {
+        height: 43px !important;
+    }
+
+    #sd-strip-bar.sticky #sd-site-title {
+        font-size: 1.1em;
+        padding-top: 0.5em;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    
+    #sd-strip-bar.full-height #sd-site-title {
+        top: 19px;
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    #sd-strip-bar-wrap {
+        margin-top: 1.5em;
+    }
+
+    #sd-site-logo {
+        left: 1.5em;
+        top: -0.5em;
+    }
+
+    #sd-strip-bar.sticky #sd-site-title {
+        font-size: 1.2em;
+    }
+
+    #sd-strip-bar.full-height #sd-site-title {
+        position: absolute;
+        top: 23px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #sd-site-title {
+        padding: 0.6em 0.6em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #sd-strip-bar-wrap {
+        margin-top: 1.8em;
+    }
+
+    #sd-site-logo {
+        top: -0.6em;
+        left: 1.9em;
+    }
+
+    #sd-site-title {
+        font-size: 2em;
+        padding: 0.35em 1em;
+    }
+    
+    .sd-contact-btn {
+        top: 0.4em;
+        height: 45px;
+        padding: 0.45em 1.2em;
+    }
+
+    #sd-strip-bar.sticky {
+        height: 60px !important;
+    }
+
+    #sd-strip-bar.sticky #sd-site-title {
+        padding-top: 0.65em;
+        font-size: 1.5em;
+    }
+
+    #sd-strip-bar.full-height #sd-site-title {
+        top: 29px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #sd-strip-bar-wrap {
+        margin-top: 2.2em;
+    }
+
+    #sd-site-title {
+        font-size: 2em;
+        padding: 0.45em 1.4em;
+    }
+
+    #sd-site-logo {
+        left: 2.5em;
+    }
+
+    #sd-strip-bar.full-height #sd-site-title {
+        top: 35px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #sd-site-logo {
+        width: 14%;
+        left: 2.8em;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    #sd-strip-bar-wrap {
+        margin-top: 2.5em;
+    }
+
+    #sd-site-logo {
+        top: -0.7em;
+        left: 2em;
+    }
+
+    #sd-strip-bar.full-height #sd-site-title {
+        top: 40px;
+    }
+}

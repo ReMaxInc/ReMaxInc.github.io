@@ -1,0 +1,282 @@
+
+.is-hidden {
+    display: none;
+}
+
+/* ==================================================
+   IMAGE LIGHTBOX SELECTOR
+   ================================================== */
+
+.imagelightbox-wrap {
+    cursor: pointer;
+    position: fixed;
+    z-index: 10000;
+    padding: 5px;
+    -ms-touch-action: none;
+    touch-action: none;
+    background-color: rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+    box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+}
+
+.slidenum {
+    position: absolute;
+    bottom: 0.3em;
+    right: 10px;
+    z-index: 10002;
+    color: rgba(255,255,255,1);
+}
+
+/* ==================================================
+   ACTIVITY INDICATION
+   ================================================== */
+
+#imagelightbox-loading,
+#imagelightbox-loading div {
+    border-radius: 50%;
+}
+
+#imagelightbox-loading {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: rgba(68,68,68,1);
+    background-color: rgba( 0, 0, 0, .5 );
+    position: fixed;
+    z-index: 10003;
+    top: 50%;
+    left: 50%;
+    padding: 0.625em;
+    margin: -1.25em 0 0 -1.25em;
+
+    -webkit-box-shadow: 0 0 2.5em rgba( 0, 0, 0, .75 );
+    box-shadow: 0 0 2.5em rgba( 0, 0, 0, .75 );
+}
+
+#imagelightbox-loading div {
+    width: 1.25em;
+    height: 1.25em;
+    background-color: rgba(255,255,255,1);
+
+    -webkit-animation: imagelightbox-loading .5s ease infinite;
+    animation: imagelightbox-loading .5s ease infinite;
+}
+
+@-webkit-keyframes imagelightbox-loading {
+    from { opacity: .5; -webkit-transform: scale( .75 ); }
+    50%  { opacity: 1;  -webkit-transform: scale( 1 ); }
+    to   { opacity: .5; -webkit-transform: scale( .75 ); }
+}
+
+@keyframes imagelightbox-loading {
+    from { opacity: .5; transform: scale( .75 ); }
+    50%  { opacity: 1;  transform: scale( 1 ); }
+    to   { opacity: .5; transform: scale( .75 ); }
+}
+
+/* ==================================================
+   OVERLAY
+   ================================================== */
+
+#imagelightbox-overlay {
+    background-color: rgba(255,255,255,1);
+    background-color: rgba( 0, 0, 0, 0.6 );
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* ==================================================
+   "CLOSE" BUTTON
+   ================================================== */
+
+#imagelightbox-close {
+    width: 2.5em;
+    height: 2.5em;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10002;
+    top: -1em;
+    right: -1em;
+
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+}
+
+#imagelightbox-close:hover,
+#imagelightbox-close:focus { 
+    background-color: rgba(17, 17, 17,1); 
+    outline: none;
+}
+
+#imagelightbox-close:before,
+#imagelightbox-close:after {
+    width: 2px;
+    background-color: rgba(255,255,255,1);
+    content: '';
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -1px;
+}
+
+#imagelightbox-close:before {
+    -webkit-transform: rotate( 45deg );
+    -ms-transform: rotate( 45deg );
+    transform: rotate( 45deg );
+}
+
+#imagelightbox-close:after {
+    -webkit-transform: rotate( -45deg );
+    -ms-transform: rotate( -45deg );
+    transform: rotate( -45deg );
+}
+
+/* ==================================================
+   CAPTION
+   ================================================== */
+
+#imagelightbox-caption {
+    text-align: left;
+    color: rgba(255,255,255,1);
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    z-index: 10001;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.3em 0.625em 0.4em;
+}
+
+/* ==================================================
+   ARROWS
+   ================================================== */
+
+.imagelightbox-arrow {
+    width: 3.3em;
+    height: 6.5em;
+    background-color: rgba( 0, 0, 0, 1 );
+    vertical-align: middle;
+    display: block;
+    position: absolute;
+    z-index: 10001;
+    top: 50%;
+    margin-top: -3.75em;
+    border: none;
+}
+
+.imagelightbox-arrow:focus { 
+    outline: none;
+}
+
+.imagelightbox-arrow-left { 
+    left: -3em;
+    border-radius: 10px 0 0 10px;
+}
+
+.imagelightbox-arrow-right { 
+    right: -3em;
+    border-radius: 0 10px 10px 0;
+}
+
+.imagelightbox-arrow:before {
+    width: 0;
+    height: 0;
+    border: 1em solid transparent;
+    content: '';
+    display: inline-block;
+    margin-bottom: -0.125em;
+}
+
+.imagelightbox-arrow-left:before {
+    border-left: none;
+    border-right-color: rgba(255,255,255,1);
+    margin-left: -0.313em;
+}
+
+.imagelightbox-arrow-right:before {
+    border-right: none;
+    border-left-color: rgba(255,255,255,1);
+    margin-right: -0.313em;
+}
+
+#imagelightbox-loading,
+#imagelightbox-overlay,
+#imagelightbox-close,
+#imagelightbox-caption,
+.imagelightbox-arrow {
+    -webkit-animation: fade-in .25s linear;
+    animation: fade-in .25s linear;
+}
+
+@-webkit-keyframes fade-in {
+    from    { opacity: 0; }
+    to      { opacity: 1; }
+}
+@keyframes fade-in {
+    from    { opacity: 0; }
+    to      { opacity: 1; }
+}
+
+/* ==================================================
+   MEDIA QUERIES
+   ================================================== */
+
+@media only screen and (max-width: 600px) {
+
+    .imagelightbox-arrow {
+        width: 2em;
+        height: 4em;
+        background-color: rgba( 0, 0, 0, 1 );
+        vertical-align: middle;
+        display: block;
+        position: absolute;
+        z-index: 10001;
+        top: 50%;
+        margin-top: -2em;
+        border: none;
+    }
+
+    .imagelightbox-arrow:focus { 
+        outline: none;
+    }
+
+    .imagelightbox-arrow-left { 
+        left: -1em;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .imagelightbox-arrow-right { 
+        right: -1em;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .imagelightbox-arrow:before {
+        width: 0;
+        height: 0;
+        border: 1em solid transparent;
+        content: '';
+        display: inline-block;
+        margin-bottom: -0.125em;
+    }
+
+    .imagelightbox-arrow-left:before {
+        border-left: none;
+        border-right-color: rgba(255,255,255,1);
+        margin-left: -0.313em;
+    }
+
+    .imagelightbox-arrow-right:before {
+        border-right: none;
+        border-left-color: rgba(255,255,255,1);
+        margin-right: -0.2em;
+    }
+
+
+
+}

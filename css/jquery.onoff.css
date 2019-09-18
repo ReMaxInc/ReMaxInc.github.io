@@ -1,0 +1,85 @@
+/**
+ * onoff.css
+ * Author: http://proto.io/freebies/onoff/
+ * Author: Timmy Willison
+ */
+.onoffswitch {
+    position: relative;
+    width: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: -4px;
+    margin-left: 10px;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #999999;
+    border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    -webkit-transition: margin 0.1s ease-in;
+    transition: margin 0.1s ease-in;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left;
+    padding: 0;
+    width: 50%;
+    height: 26px;
+    color: white;
+    font: bold 14px/26px Trebuchet, Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* on - YES */
+.onoffswitch-inner:before {
+    content: " ";
+    padding-left: 10px;
+    color: #FFFFFF;
+    background-color: rgba(0, 162, 23,1);
+}
+
+/* off - NO */
+.onoffswitch-inner:after {
+    content: " ";
+    padding-right: 10px;
+    color: rgba(153, 153, 153,1);
+    background-color: rgba(238, 238, 238,1);
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 22px;
+    width: 24px;
+    margin: 2px;
+    background: white;
+    border: 1px solid #999999;
+    border-radius: 20px;
+    -webkit-transition: right 0.1s ease-in, -webkit-box-shadow 0.1s ease-in;
+    transition: right 0.1s ease-in, box-shadow 0.1s ease-in;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0;
+}

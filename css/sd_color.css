@@ -1,0 +1,138 @@
+/* Text Color
+       ========================================================================== */
+
+html {
+    color: #4c463e;
+}
+
+h1 {
+    color: #4c463e;
+}
+h2 {
+    color: #4c463e;
+}
+
+a, a > h2 {
+    color: #ad5146;
+}
+
+a:hover, a > h2:hover {
+    color: #6f1711;
+}
+
+/***************************************************/
+
+#sd-main-wrap{
+    background-color: rgba(243,224,219,0.8);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    position: relative;
+    border-color: rgba(243,224,219,0.8);
+}
+
+/***************************************************/
+
+#sd-site-title {
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/*************************/
+
+.sd-tab li > a {
+    color: rgba(173, 81, 70,1);
+}
+
+.sd-tab li > a:hover ,
+.sd-tab li.sd-tab-item-active > a {
+    color: rgba(111, 23, 17,1);
+}
+
+.sd-tab > .sd-tab-item > a {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.sd-tab > .sd-tab-item-active > a {
+    border-color: #fff !important;
+}
+
+/***** tab selected background color *****/
+.sd-tab > li > a:hover,
+.sd-tab > li > a:focus,
+.sd-tab > .sd-tab-item-active > a {
+    background: rgba(255,255,255,1);
+}
+
+/******************* Page ********************************/
+
+/* bottom gradient of header image */
+#sd-header-gradient:before {
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(243,224,219,1) 100%);  /*FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(243,224,219,1) 100%);  /*Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(243,224,219,1) 100%);  /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f3e0db',GradientType=0 );  /*IE6-9 */
+}
+
+#sd-header-gradient:after {
+    background: -moz-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgba(243,224,219,1) 80%);
+    background: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgba(243,224,219,1) 80%);
+    background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(243,224,219,1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00785678", endColorstr="#785678",GradientType=0 );
+}
+
+/***** page background color *****/
+#sd-column-page {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/***** page outline color *****/
+.sd-content-border{
+    border-color: rgba(232, 191, 191,1);
+}
+
+/***** footer outline color *****/
+.sd-footer-border{
+    border-color: rgba(232, 191, 191,1);
+}
+
+/***** page title color *****/
+.sd-page-title {
+    color: rgba(76, 70, 62,1);
+}
+
+/***** block title color *****/
+.sd-block-title{
+    color: rgba(76, 70, 62,1);
+}
+
+/***** block text color *****/
+.sd-block-text-desc {
+    color: rgba(76, 70, 62,1);
+}
+
+/***** link text color *****/
+.sd-block-text-desc a,
+.sd-footer-content a {
+    color: rgba(173, 81, 70,1);
+}
+
+.sd-image-desc {
+    color: #4c463e;
+}
+
+/***** footer background color *****/
+
+#sd-footer-content {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.3);
+}
+
+/***************************************************/
+
+#sd-bottom-icon, #sd-bottom-icon a {
+    color: rgba(76, 70, 62,1);
+}
+
+#sd-credit {
+    color: rgba(173, 81, 70,1);
+}
